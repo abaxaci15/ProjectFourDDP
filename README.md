@@ -1,6 +1,6 @@
-# ProjectFourDDP
-User Guide to Course Four Project of Developing Data Products:
-Home Price Ranges of Homes in Baltimore's Mayfield Neighborhood
+# User Guide to Course Four Project of Developing Data Products:
+## Home Price Ranges of Homes in Baltimore's Mayfield Neighborhood
+
 
 General Description:
 This app is the last project for the Developing Data Products course. For this project, I gathered Zillow home value data on houses in Baltimore's Mayfield neighborhood.

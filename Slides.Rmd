@@ -1,0 +1,57 @@
+---
+title: "Mapping Zillow Home Estimates in Baltimore's Mayfield Neighborhood"
+subtitle: 
+author: "c. ford"
+date: "1/22/2021"
+output: ioslides_presentation
+widescreen: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Introduction {.smaller}
+
+This presentation describes the final project I did for the Developing Data Products course. <br><br>
+For this project, I gathered Zillow home value data on houses in Baltimore's Mayfield neighborhood from the Zillow API.<br><br>
+The app is a map that allows you to view a set of homes that fall into a particular price range. 
+
+**Here is a link to the shiny app:**  https://cfabacaxi15.shinyapps.io/project4/
+
+Here is a link to the ui code on my github page: https://github.com/abaxaci15/ProjectFourDDP/blob/main/ui.R
+
+Here is a link to the server code on my github page:https://github.com/abaxaci15/ProjectFourDDP/blob/main/server.R
+
+Here is a link to the README file: https://github.com/abaxaci15/ProjectFourDDP/blob/main/README.md
+
+
+
+```{r load, echo=TRUE, eval=TRUE, warning=FALSE, message=FALSE}
+```
+## Background {.smaller}
+
+- The purpose of this app is to explore home prices in the Mayfield neighborhood of Baltimore 
+- To retrieve the home price data, I accessed the Zillow API with data from Baltimore's Real Property dataset at https://data.baltimorecity.gov
+- The app will be expanded to include other important home characteristics, such as number of bedrooms, number of bathrooms, the year
+in which the home was built, and grocery stores nearby
+
+## How to Use App {.smaller}
+
+- To use the app click on the drop-down menu and select a Zillow home value range.
+- Then click the submit button.
+- The houses that fall into that home value range will populate on the map (see below).
+```{r map, echo = TRUE}
+knitr::include_graphics("map.png")
+```
+
+## Coding Details {.smaller}
+
+To create the app I used the Shiny APP platform, with ui.R and server.R files. To create the value ranges a user-friendly drop-down box was created on the user interface side. A submit button is also displayed for the user.
+
+The server side is organized around the submit button, which serves as a trigger event (observeEvent). Once the submit button is hit, the code creates a map with the homes based on the value range input.
+
+```{r pressure}
+
+```
+
